@@ -7,10 +7,10 @@ import org.junit.Test;
 public class ConverterInternetImplementsTest {
 
 	@Test
-	public void testFromCurrencytoBLR(double summ, Currency cur) {
-		if(USD == Currency.USD){
-			
-		}
+	public void testFromCurrencytoBLR_1() {
+              IConverter con = new ConverterInternetImplements ();
+	      double s1 = con.fromCurrencytoBLR(1, Currency.USD);
+	      System.assertEquals(1.23, s1);
 	}
 
 	@Test
